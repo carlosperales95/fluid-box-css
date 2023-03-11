@@ -4,7 +4,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #ffefdb;
+    background: #aeb5e7;
     font-family: sans-serif;
     color: #352a22;
 }
@@ -14,7 +14,7 @@ body {
     height: 400px;
     border:#352a22 4px solid;
     border-radius: 8px;
-    background-color: burlywood;
+    background-color: #bbe6e1;
     overflow: hidden;
     position:relative;
     display: flex;
@@ -40,7 +40,40 @@ body {
     min-height: 225%;
     border-radius: 30%;
     position: absolute;
-    background-color: #ffefdb;
+    background-color: #b2b9f2;
     animation: spin 5s linear infinite;
     z-index: 1;
+}
+
+
+.link {
+  align-items: center;
+  backdrop-filter: blur(3px);
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;  
+  display: inline-flex;
+  gap: 5px;
+  left: 10px;
+  padding: 10px 20px;
+  position: fixed;
+  bottom: 20%;
+  text-decoration: none;
+  z-index: 100;
+}
+
+.link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.link > i, .link > span {
+  height: 20px;
+  line-height: 20px;
+}
+
+.link > span {
+  color: white;
 }

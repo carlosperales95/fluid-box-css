@@ -1,20 +1,19 @@
 <template>
-  <div class="mainBox">
-      <div class="smallBox">
-      
-      </div>
-      <h1><b>Fluid Box Anim</b></h1>
-      <p>Put your content here</p>
-  </div>
+  <FluidBox title="Thirsty?" msg="Drink up, friend" />
+
+  <a id="source-link" class="link" href="https://github.com/carlosperales95" target="_blank">
+    <span class="roboto-mono">GitHub</span>
+  </a>
+
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
+import FluidBox from './components/FluidBox.vue'
 
 export default {
   name: 'App',
   components: {
-    // HelloWorld
+    FluidBox
   }
 }
 </script>
